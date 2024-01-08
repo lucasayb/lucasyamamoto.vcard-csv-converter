@@ -6,12 +6,12 @@ provider:
   runtime: python3.9
 
 functions:
-  hello:
-    handler: handler.hello
+  converter:
+    handler: handler.converter
     events:
       - httpApi:
           path: /
-          method: get
+          method: post
 
 plugins:
   - serverless-python-requirements
